@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esign</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="main">
+      <h1 class="">Create your signature</h1>
+      <div class="top">
+        <div class="block">
+          <p class="input-fn" id="color-picker">Pen color</p>
+          <input class="form-control" type="color" id="colorPicker" />
+        </div>
+        <div class="block">
+          <p class="input-fn" id="Bg-picker">Background</p>
+          <input type="color" class="form-control" id="canvasColor" />
+        </div>
+        <div class="block">
+          <p class="input-fn" id="size-picker">Font Size</p>
+          <select name="" id="font-size">
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="15">15px</option>
+            <option value="20">20px</option>
+            <option value="25">25px</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <canvas class="canvas" id="myCanvas" height="600" width="800"></canvas>
+      </div>
+      <div class="buttom">
+        <button id="clearButton" class="btn btn-danger">Clear</button>
+        <button id="save-download" class="btn btn-success">
+          Save & Download
+        </button>
+        <button id="retrive" class="btn btn-warning">
+          Retrieve saved Signature
+        </button>
+      </div>
+    </div>
+     
+  </body>
+</html>
